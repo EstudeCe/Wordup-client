@@ -7,12 +7,15 @@ export default createGlobalStyle`
     box-sizing: border-box;
 
     font-family: 'Roboto', sans-serif;
+    color: ${({ theme }) => theme.colors.black[50]};
   }
 
   body{
     background: ${(props) => props.theme.colors.black[800]};
+  }
 
-    color: ${({ theme }) => theme.colors.black[50]};
+  a {
+    text-decoration: none;
   }
 
 `;
